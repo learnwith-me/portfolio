@@ -1,54 +1,43 @@
 import React, { useState } from 'react'
-import Nav from './Nav';
-import TopSearch from '../components/TopSearch';
 import Hero from './Hero';
 import Feature from './Feature';
 import Authors from '../components/Authors';
-import Posts from '../components/Posts';
 import Recommended from '../components/Recommended';
-import Footer from './Footer';
+import { useParams } from 'react-router-dom';
+import { Posts } from '../components/Posts';
 
-const Home = () => {
+const Home = ({catData}) => {
 
-    const [isSearchVisible, setSearchVisible] = useState(false);
+    const [displayCount, setDisplayCount] = useState(6); // Initial number of items to display
 
-    const openSearch = () => {
-        setSearchVisible(!isSearchVisible)
-        if (!isSearchVisible) {
-            document.body.classList.add('search-is-active');
-            document.getElementById('isSearchVisible').classList.add('display-block');
-            document.body.classList.remove('search-no-active');
-        } else {
-            document.body.classList.remove('search-is-active');
-            document.body.classList.add('search-no-active');
-        }
-    }
-    
+    const handleLoadMore = () => {
+        setDisplayCount(displayCount + 6); // Increase the display count by 4 when "Load More" is clicked
+    };
 
-  return (
-    <>
-        <Nav openSearch={openSearch} />
-        <main className='global-main'>
-            <div className="hero-section dark:bg-darkModeBlack">
-                <div className="hero-wrap">
-                    <Hero />
-                    <Feature />
+    const cateData = catData || [];
+    const params = useParams();
+
+    return (
+            <main className='global-main'>
+                <div className="hero-section dark:bg-darkModeBlack">
+                    <div className="hero-wrap">
+                        <Hero />
+                        <Feature />
+                    </div>
                 </div>
-            </div>
-            <div class="loop-section global-padding">
-                <Authors />
-                <Posts />
-            </div>
-            <div class="pagination-section">
-                <a href="page/2.html" aria-label="Load more"></a>
-                <button class="global-button dark:bg-ghost-accent-color">Load more</button>
-            </div>
-            <Recommended />
-        </main>
-        <Footer />
-        <TopSearch isSearchVisible={isSearchVisible} openSearch={openSearch} />
-    </>
-  )
+                <div class="loop-section global-padding">
+                    <Authors />
+                    <Posts singleCatData={cateData} params={params} displayCount={displayCount} setDisplayCount={setDisplayCount} handleLoadMore={handleLoadMore} />
+                </div>
+                {displayCount < cateData.length && (
+                    <div class="pagination-section">
+                        <a href="page/2.html" aria-label="Load more"></a>
+                        <button class="global-button dark:bg-ghost-accent-color" onClick={handleLoadMore}>Load more</button>
+                    </div>
+                )}
+                <Recommended />
+            </main>
+    )
 }
 
 export default Home

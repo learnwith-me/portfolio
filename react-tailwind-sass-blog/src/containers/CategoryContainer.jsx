@@ -1,15 +1,17 @@
 import React, { useEffect, useState } from 'react'
-import Home from '../sections/Home'
+import SingleCategory from '../sections/SingleCategory'
 import { useParams } from 'react-router-dom';
 import { FetchData } from '../config/BaseApi';
 
-const HomeContainer = () => {
+const CategoryContainer = () => {
 
-  const [data, setData] = useState(null);
+	const [data, setData] = useState(null);
 	// const [loading, setLoading] = useState(false);
 	const {id} = useParams();
 
-    useEffect(()=> {
+	// console.log("PARAM", id)
+
+	useEffect(()=> {
 		// showLoader();
 		// fetch('https://harshadpatil.com/wp-backend/wp-json/wc/w3/posts')
 		FetchData('posts')
@@ -20,10 +22,12 @@ const HomeContainer = () => {
 	}, []);
 
 	if (data) {
-        return (
-            <Home catData={data.data} />
-        )
-    }
+		return (
+			<main class="global-main">
+				<SingleCategory catData={data.data} />
+			</main>
+		)
+	}
 }
 
-export default HomeContainer
+export default CategoryContainer

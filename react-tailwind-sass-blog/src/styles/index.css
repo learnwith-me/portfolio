@@ -5,6 +5,20 @@
 @tailwind components;
 @tailwind utilities;
 
+.dark {
+    .post-content pre > code {
+            color: #000;
+        }
+}
+
+pre {
+    border-radius: 20%;
+}
+
+.flickity-slider {
+    transform: translateX(0%);
+}
+
 /* .flickity-enabled {
     position: relative
 }

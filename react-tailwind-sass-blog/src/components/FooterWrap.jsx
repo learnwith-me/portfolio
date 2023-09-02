@@ -1,15 +1,15 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const FooterWrap = () => {
     return (
         <div class="footer-container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <a href="index.html" class="is-logo"
-                    ><img
-                            src="content/images/2022/01/basho.svg"
-                            alt="Basho home"
-                        /></a>
+                    <Link to="/" class="is-logo">
+                        Harshad Patil
+                    </Link>
+                    
                 </div>
                 <p class="footer-description dark:text-white">
                     A minimal, functional theme for running a paid-membership
@@ -21,7 +21,7 @@ const FooterWrap = () => {
                     <small>Social</small>
                     <ul>
                         <li>
-                            <a href="#" className='flex'
+                            <a href="#" className='flex dark:text-white'
                             ><svg
                                 role="img"
                                 viewBox="0 0 24 24"
@@ -34,7 +34,7 @@ const FooterWrap = () => {
                             >
                         </li>
                         <li>
-                            <a href="#" className='flex'
+                            <a href="#" className='flex dark:text-white'
                             ><svg
                                 role="img"
                                 viewBox="0 0 24 24"
@@ -47,7 +47,7 @@ const FooterWrap = () => {
                             >
                         </li>
                         <li>
-                            <a href="#" className='flex'
+                            <a href="#" className='flex dark:text-white'
                             ><svg
                                 role="img"
                                 viewBox="0 0 24 24"
@@ -60,7 +60,7 @@ const FooterWrap = () => {
                             >
                         </li>
                         <li>
-                            <a href="#" className='flex'
+                            <a href="#" className='flex dark:text-white'
                             ><svg
                                 role="img"
                                 viewBox="0 0 24 24"
@@ -77,10 +77,10 @@ const FooterWrap = () => {
                 <div class="footer-nav-column dark:text-white">
                     <small>About</small>
                     <ul>
-                        <li><a href="style-guide.html">Style Guide</a></li>
-                        <li><a href="features.html">Features</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="404.html">404</a></li>
+                        <li><a href="style-guide.html" className='dark:text-white'>Style Guide</a></li>
+                        <li><a href="features.html" className='dark:text-white'>Features</a></li>
+                        <li><a href="contact.html" className='dark:text-white'>Contact</a></li>
+                        <li><a href="404.html" className='dark:text-white'>404</a></li>
                         <li>
                             <a
                                 href="#"
@@ -92,29 +92,29 @@ const FooterWrap = () => {
                 <div class="footer-nav-column dark:text-white">
                     <small>Features</small>
                     <ul>
-                        <li><a href="demos.html">Demos</a></li>
-                        <li><a href="index.html">Light version</a></li>
+                        <li><a href="demos.html" className='dark:text-white'>Demos</a></li>
+                        <li><a href="index.html" className='dark:text-white'>Light version</a></li>
                         <li>
-                            <a href="">Color version</a>
+                            <a href="" className='dark:text-white'>Color version</a>
                         </li>
                         <li>
-                            <a href="#"
+                            <a href="#" className='dark:text-white'
                             >Partial version</a
                             >
                         </li>
                         <li>
-                            <a href="#">Dark version</a>
+                            <a href="#" className='dark:text-white'>Dark version</a>
                         </li>
                     </ul>
                 </div>
                 <div class="footer-nav-column dark:text-white">
                     <small>Membership</small>
                     <ul>
-                        <li><a href="demo-account-member.html">Account</a></li>
-                        <li><a href="membership.html">Membership</a></li>
-                        <li><a href="subscribe.html">Subscribe</a></li>
-                        <li><a href="tags.html">Tags</a></li>
-                        <li><a href="authors.html">Authors</a></li>
+                        <li><a href="demo-account-member.html" className='dark:text-white'>Account</a></li>
+                        <li><a href="membership.html" className='dark:text-white'>Membership</a></li>
+                        <li><a href="subscribe.html" className='dark:text-white'>Subscribe</a></li>
+                        <li><a href="tags.html" className='dark:text-white'>Tags</a></li>
+                        <li><a href="authors.html" className='dark:text-white'>Authors</a></li>
                     </ul>
                 </div>
             </div>
