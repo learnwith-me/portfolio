@@ -10,7 +10,8 @@ module.exports = {
         'darkModeBlack':'#1a1b1e',
         'darkModeGray1':'#f7f7f5',
         'darkModeGray2':'#2b2d31',
-        'ghost-accent-color': '#612bff'
+        'ghost-accent-color': '#612bff',
+        'darkModeTextColor': '#f7f7f5'
       }
     },
   },

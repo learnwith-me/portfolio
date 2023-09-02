@@ -3,7 +3,7 @@ import React from 'react'
 const Hero = () => {
     return (
         <div class="hero-content global-padding">
-            <h1 class="hero-title hero-title-large dark:text-white"><span>〈Learn With Me /〉</span> See our thoughts, stories and ideas.</h1>
+            <h1 class="hero-title hero-title-large dark:text-white"><span>〈Learn With Me /〉</span>Master frontend programming skills with me. Enroll now and code!</h1>
             <div class="subscribe-section">
                 <div class="subscribe-wrap">
                     <form data-members-form="subscribe" class="subscribe-form dark:bg-darkModeGray2">
