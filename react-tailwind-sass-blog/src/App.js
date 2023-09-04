@@ -6,6 +6,7 @@ import Nav from "./sections/Nav";
 import TopSearch from "./components/TopSearch";
 import Footer from "./sections/Footer";
 import SinglePostContainer from "./containers/SinglePostContainer";
+import DocumentContainer from "./containers/DocumentContainer";
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
 				<Route path="/" exact element={<HomeContainer />} />
 				<Route path="/category/:slug"  element={<CategoryContainer />} />
 				<Route path="/singlepost/:id/:slug"  element={<SinglePostContainer />} />
+				<Route path="/doc"  element={<DocumentContainer />} />
 			</Routes>
 			<Footer />
 			<TopSearch isSearchVisible={isSearchVisible} openSearch={openSearch} />
