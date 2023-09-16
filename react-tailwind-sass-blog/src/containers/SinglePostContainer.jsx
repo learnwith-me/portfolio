@@ -26,7 +26,7 @@ const SinglePostContainer = () => {
             const singlePostDataOne = singlePostData.data || {};
 
             return (
-                <main class="global-main">
+                <main className="global-main">
                     <SinglePost singlePostData={singlePostDataOne} slug={slug} id={id} />
                 </main>
             )

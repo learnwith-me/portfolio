@@ -1,31 +1,63 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Posts, { SCategory } from '../components/Posts'
 import { useParams } from 'react-router-dom';
+import { FetchCategory } from '../config/BaseApi';
 
 const SingleCategory = ({catData}) => {
 
-    // console.log(catData)
+    // console.log("asd ",catData)
 
     const cateData = catData || [];
     const params = useParams();
+    const matchingCategories = catData.flatMap((catItem) =>
+    catItem.categories.filter((cats) => params.slug === cats.slug)
+    );
 
-    return (
-        <>
-        <div class="archive-section is-image dark:bg-darkModeBlack">
-            <div class="archive-image global-image">
-                <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=MnwxMTc3M3wwfDF8c2VhcmNofDR8fHJldmlld3xlbnwwfHx8fDE2MzgwMTg3MTU&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=2000" loading="lazy" alt="Review" />	</div>
-            <h1 class="archive-title global-title is-tag dark:text-white">{params.slug}<span className=' dark:text-black'>9</span></h1>
-            <p class="archive-excerpt global-excerpt dark:text-white">Vestibulum vehicula dui venenatis neque tempor, accumsan iaculis sapien ornare. Sed at ante porta, ullamcorper massa eu, ullamcorper sapien.</p>
-        </div>
-        <div className='loop-section global-padding'>
-            <div class="global-subtitle">
-                <small class="global-subtitle-title">
-                Check out the <span>latest posts</span></small>
+    const [categoryLabel, setCategoryLabel] = useState(null);
+
+    useEffect(() => {
+        FetchCategory('categories')
+            .then(setCategoryLabel)
+            .catch(console.error);
+    }, []);
+
+    // console.log(params.slug)
+    if (categoryLabel) {
+        const catLabel = categoryLabel.data || {};
+        return (
+            <>
+            {
+                catLabel.map((catItems, index) => {
+                   
+                    if(params.slug == catItems.slug) {
+                        console.log("CATIR ",catItems);
+                        return (
+                            <div key={index} className="archive-section is-image dark:bg-darkModeBlack">
+                                <div className="archive-image global-image">
+                                    <img src={catItems?.acf?.category_image?.url} loading="lazy" alt="Review" />	</div>
+                                <h1 className="archive-title global-title is-tag dark:text-white">{catItems.name}
+                                    
+                                    <span className=' dark:text-black'>{matchingCategories.length}</span>
+                                
+                                </h1>
+                                <p className="archive-excerpt global-excerpt dark:text-white">
+                                    {catItems.description}
+                                </p>
+                            </div>
+                        )
+                    }
+                })
+            }
+            <div className='loop-section global-padding dark:bg-darkModeBlack !mb-0'>
+                <div className="global-subtitle !mb-0">
+                    <small className="global-subtitle-title dark:text-white">
+                    Check out the <span>latest posts</span></small>
+                </div>
+                <SCategory singleCatData={cateData} params={params} />
             </div>
-            <SCategory singleCatData={cateData} params={params} />
-        </div>
-        </>
-    )
+            </>
+        )
+    }
 }
 
 export default SingleCategory

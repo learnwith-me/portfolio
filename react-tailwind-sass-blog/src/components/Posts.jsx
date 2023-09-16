@@ -1,12 +1,4 @@
 import React, { useState } from 'react';
-import post1 from '../assets/img/p1.jpg';
-import post2 from '../assets/img/p2.jpg';
-import post3 from '../assets/img/p3.jpg';
-import post4 from '../assets/img/p4.jpg';
-import post5 from '../assets/img/p5.jpg';
-import post6 from '../assets/img/p6.jpg';
-import post7 from '../assets/img/p7.jpg';
-import post8 from '../assets/img/p8.jpg';
 import { Link } from 'react-router-dom';
 
 export const Posts = ({ singleCatData, params, displayCount, setDisplayCount, handleLoadMore }) => {
@@ -14,31 +6,31 @@ export const Posts = ({ singleCatData, params, displayCount, setDisplayCount, ha
     
 
     return (
-        <div class="loop-wrap">
+        <div className="loop-wrap !mb-0">
 
             {
                 singleCatData.slice(0, displayCount).map((catItem, index) => {
                     return (
                         
-                        <article key={index} class="item is-loop is-image">
+                        <article key={index} className="item is-loop is-image">
                             <div
-                                class="item-image global-image global-image-orientation global-radius is-landscape"
+                                className="item-image global-image global-image-orientation global-radius is-landscape"
                             >
                                 <Link to={`/singlepost/${catItem.id}/${catItem.slug}`} className='global-link'></Link>
                                 <img
                                     sizes="(max-width:480px) 300px, (max-width:768px) 600px, 1200px"
-                                    src={catItem.featured_image.medium_large}
+                                    src={catItem?.featured_image?.medium_large}
                                     loading="lazy"
                                     alt=""
                                 />
-                                <div class="item-authors global-authors">
+                                {/* <div className="item-authors global-authors">
                                     <div>
                                         <div
-                                            class="item-author global-item-author is-image global-image"
+                                            className="item-author global-item-author is-image global-image"
                                         >
                                             <a
                                                 href="author/nichole.html"
-                                                class="global-link"
+                                                className="global-link"
                                                 title="Nichole Becker"
                                             ></a>
                                             <img
@@ -48,11 +40,11 @@ export const Posts = ({ singleCatData, params, displayCount, setDisplayCount, ha
                                             />
                                         </div>
                                         <div
-                                            class="item-author global-item-author is-image global-image"
+                                            className="item-author global-item-author is-image global-image"
                                         >
                                             <a
                                                 href="author/daryl.html"
-                                                class="global-link"
+                                                className="global-link"
                                                 title="Daryl Wehner"
                                             ></a>
                                             <img
@@ -62,18 +54,18 @@ export const Posts = ({ singleCatData, params, displayCount, setDisplayCount, ha
                                             />
                                         </div>
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
-                            <div class="item-content">
-                                <div class="item-tags global-tags">
+                            <div className="item-content">
+                                {/* <div className="item-tags global-tags">
                                     <a href="tag/lifestyle.html">Lifestyle</a><span ><a href="tag/people.html">People</a ><a href="tag/review.html">Review</a></span>
-                                </div>
-                                <h2 class="item-title dark:text-darkModeTextColor">
+                                </div> */}
+                                <h2 className="item-title dark:text-darkModeTextColor">
                                     <Link to={`/singlepost/${catItem.id}/${catItem.slug}`} className='dark:text-darkModeTextColor'>
                                         {catItem.title}
                                     </Link>
                                 </h2>
-                                <p class="item-excerpt dark:text-darkModeTextColor">
+                                <p className="item-excerpt dark:text-darkModeTextColor">
                                     {catItem.excerpt}
                                 </p>
                             </div>
@@ -92,34 +84,34 @@ export const SCategory = ({ singleCatData, params }) => {
     console.log(singleCatData)
 
     return (
-        <div class="loop-wrap">
+        <div className="loop-wrap !mb-0">
 
             {
                 singleCatData.map((catItem, index) => {
                     return (
                         catItem.categories.map((cats, index) => {
                             if(params.slug == cats.slug) {
-                                console.log(catItem)
+                                // console.log(catItem)
                                 return (
-                                    <article key={index} class="item is-loop is-image">
+                                    <article key={index} className="item is-loop is-image">
                                         <div
-                                            class="item-image global-image global-image-orientation global-radius is-landscape"
+                                            className="item-image global-image global-image-orientation global-radius is-landscape"
                                         >
-                                            <Link class="global-link" to={`/singlepost/${catItem.id}/${catItem.slug}`}></Link>
+                                            <Link className="global-link" to={`/singlepost/${catItem.id}/${catItem.slug}`}></Link>
                                             <img
                                                 sizes="(max-width:480px) 300px, (max-width:768px) 600px, 1200px"
                                                 src={catItem.featured_image.medium_large}
                                                 loading="lazy"
                                                 alt=""
                                             />
-                                            <div class="item-authors global-authors">
+                                            {/* <div className="item-authors global-authors">
                                                 <div>
                                                     <div
-                                                        class="item-author global-item-author is-image global-image"
+                                                        className="item-author global-item-author is-image global-image"
                                                     >
                                                         <a
                                                             href="author/nichole.html"
-                                                            class="global-link"
+                                                            className="global-link"
                                                             title="Nichole Becker"
                                                         ></a>
                                                         <img
@@ -129,11 +121,11 @@ export const SCategory = ({ singleCatData, params }) => {
                                                         />
                                                     </div>
                                                     <div
-                                                        class="item-author global-item-author is-image global-image"
+                                                        className="item-author global-item-author is-image global-image"
                                                     >
                                                         <a
                                                             href="author/daryl.html"
-                                                            class="global-link"
+                                                            className="global-link"
                                                             title="Daryl Wehner"
                                                         ></a>
                                                         <img
@@ -143,18 +135,18 @@ export const SCategory = ({ singleCatData, params }) => {
                                                         />
                                                     </div>
                                                 </div>
-                                            </div>
+                                            </div> */}
                                         </div>
-                                        <div class="item-content">
-                                            <div class="item-tags global-tags">
+                                        <div className="item-content">
+                                            {/* <div className="item-tags global-tags">
                                                 <a href="tag/lifestyle.html">Lifestyle</a><span ><a href="tag/people.html">People</a ><a href="tag/review.html">Review</a></span>
-                                            </div>
-                                            <h2 class="item-title dark:text-darkModeTextColor">
-                                                <Link to=''>
+                                            </div> */}
+                                            <h2 className="item-title dark:text-white">
+                                                <Link to='' className=' dark:text-white'>
                                                     {catItem.title}
                                                 </Link>
                                             </h2>
-                                            <p class="item-excerpt dark:text-darkModeTextColor">
+                                            <p className="item-excerpt dark:text-white">
                                                 {catItem.excerpt}
                                             </p>
                                         </div>

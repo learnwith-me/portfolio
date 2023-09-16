@@ -1,76 +1,76 @@
 import React from 'react';
-import author1 from '../assets/img/a1.jpg';
-import author2 from '../assets/img/a2.jpg';
-import author3 from '../assets/img/a3.jpg';
-import author4 from '../assets/img/a4.jpg';
-import author5 from '../assets/img/a5.jpg';
+import author1 from '../assets/img/smartCrayon.jpeg';
+import author2 from '../assets/img/learnwithme.jpeg';
+import author3 from '../assets/img/patilsShop.jpeg';
+import author4 from '../assets/img/workatiion.jpeg';
+import author5 from '../assets/img/growEasily.jpeg';
 
 const Authors = () => {
     return (
-        <div class="loop-subtitle">
-            <small class="loop-subtitle-title global-title dark:text-darkModeTextColor">
+        <div className="loop-subtitle">
+            <small className="loop-subtitle-title global-title dark:text-darkModeTextColor">
                 See what we’ve <br /><span>written lately</span></small
             >
-            <div class="global-authors option-1-2-3">
+            <div className="global-authors option-1-2-3">
                 <div>
-                    <div class="global-item-author is-image global-image">
+                    <div className="global-item-author is-image global-image">
                         <a
                             href="#"
-                            class="global-link"
-                            title="Breana Flatley"
-                        ></a>
-                        <img
-                            src={author1}
-                            loading="lazy"
-                            alt="Breana Flatley"
-                        />
-                    </div>
-                    <div class="global-item-author is-image global-image">
-                        <a
-                            href="#"
-                            class="global-link"
-                            title="Damian Erdman"
+                            className="global-link"
+                            title="Admin"
                         ></a>
                         <img
                             src={author2}
                             loading="lazy"
-                            alt="Damian Erdman"
+                            alt="Admin"
                         />
                     </div>
-                    <div class="global-item-author is-image global-image">
+                    <div className="global-item-author is-image global-image">
                         <a
                             href="#"
-                            class="global-link"
-                            title="Daryl Wehner"
+                            className="global-link"
+                            title="Smart Crayon"
                         ></a>
                         <img
-                            src={author3}
+                            src={author1}
                             loading="lazy"
-                            alt="Daryl Wehner"
+                            alt="Smart Crayon"
                         />
                     </div>
-                    <div class="global-item-author is-image global-image">
+                    <div className="global-item-author is-image global-image">
                         <a
                             href="#"
-                            class="global-link"
-                            title="Nichole Becker"
+                            className="global-link"
+                            title="Workatiion - Solo Traveller"
                         ></a>
                         <img
                             src={author4}
                             loading="lazy"
-                            alt="Nichole Becker"
+                            alt="Workatiion - Solo Traveller"
                         />
                     </div>
-                    <div class="global-item-author is-image global-image">
+                    <div className="global-item-author is-image global-image">
                         <a
                             href="#"
-                            class="global-link"
-                            title="Liza Harber"
+                            className="global-link"
+                            title="Patils Shop - Clothing Brand"
+                        ></a>
+                        <img
+                            src={author3}
+                            loading="lazy"
+                            alt="Patils Shop - Clothing Brand"
+                        />
+                    </div>
+                    <div className="global-item-author is-image global-image">
+                        <a
+                            href="#"
+                            className="global-link"
+                            title="Grow Easily"
                         ></a>
                         <img
                             src={author5}
                             loading="lazy"
-                            alt="Liza Harber"
+                            alt="Grow Easily"
                         />
                     </div>
                 </div>

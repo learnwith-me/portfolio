@@ -1,45 +1,45 @@
 import React from 'react'
-import post1 from '../assets/img/p1.jpg';
-import post2 from '../assets/img/p2.jpg';
-import post3 from '../assets/img/p3.jpg';
-import post4 from '../assets/img/p4.jpg';
-import post5 from '../assets/img/p5.jpg';
+import post1 from '../assets/img/90-black-cassetts-tshirt.jpg';
+import post2 from '../assets/img/snake-black-tshirt.jpg';
+import post3 from '../assets/img/red-space-rocket.jpg';
+import post4 from '../assets/img/blue-bear.png';
+import post5 from '../assets/img/white-cat-tshirt.png';
 import post6 from '../assets/img/p6.jpg';
 import post7 from '../assets/img/p7.jpg';
 import post8 from '../assets/img/p8.jpg';
 
 const Recommended = () => {
   return (
-    <div class="special-section global-padding">
-      <div class="special-subtitle global-subtitle">
-        <small class="global-subtitle-title"
+    <div className="special-section global-padding dark:bg-darkModeBlack">
+      <div className="special-subtitle global-subtitle">
+        <small className="global-subtitle-title"
         ><span>Recommended</span></small
         >
       </div>
-      <div class="special-wrap">
-        <article class="item is-special is-image">
+      <div className="special-wrap !mb-0">
+        <article className="item is-special is-image">
           <div
-            class="item-image global-image global-image-orientation global-radius"
+            className="item-image global-image global-image-orientation global-radius"
           >
             <a
               href="the-trick-to-getting-more-done-is-to-have-the-freedom-to-roam-around.html"
-              class="global-link"
+              className="global-link"
               aria-label="The trick to getting more done is to have the freedom to roam around"
             ></a>
             <img
               sizes="(max-width:480px) 300px, 600px"
-              src={post7}
+              src={post1}
               loading="lazy"
               alt=""
             />
-            <div class="item-authors global-authors">
+            {/* <div className="item-authors global-authors">
               <div>
                 <div
-                  class="item-author global-item-author is-image global-image"
+                  className="item-author global-item-author is-image global-image"
                 >
                   <a
                     href="author/breana.html"
-                    class="global-link"
+                    className="global-link"
                     title="Breana Flatley"
                   ></a>
                   <img
@@ -49,11 +49,11 @@ const Recommended = () => {
                   />
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
-          <div class="item-content">
-            <h2 class="item-title dark:text-darkModeTextColor">
-              <a
+          <div className="item-content">
+            <h2 className="item-title dark:text-darkModeTextColor">
+              <a className=' dark:text-white'
                 href="the-trick-to-getting-more-done-is-to-have-the-freedom-to-roam-around.html"
               >The trick to getting more done is to have the freedom to
                 roam around</a
@@ -61,13 +61,13 @@ const Recommended = () => {
             </h2>
           </div>
         </article>
-        <article class="item is-special is-image">
+        <article className="item is-special is-image">
           <div
-            class="item-image global-image global-image-orientation global-radius"
+            className="item-image global-image global-image-orientation global-radius"
           >
             <a
               href="every-day-in-every-city-and-town-across-the-country.html"
-              class="global-link"
+              className="global-link"
               aria-label="Every day, in every city and town across the country"
             ></a>
             <img
@@ -76,14 +76,14 @@ const Recommended = () => {
               loading="lazy"
               alt=""
             />
-            <div class="item-authors global-authors">
+            {/* <div className="item-authors global-authors">
               <div>
                 <div
-                  class="item-author global-item-author is-image global-image"
+                  className="item-author global-item-author is-image global-image"
                 >
                   <a
                     href="author/damian.html"
-                    class="global-link"
+                    className="global-link"
                     title="Damian Erdman"
                   ></a>
                   <img
@@ -93,11 +93,11 @@ const Recommended = () => {
                   />
                 </div>
                 <div
-                  class="item-author global-item-author is-image global-image"
+                  className="item-author global-item-author is-image global-image"
                 >
                   <a
                     href="author/breana.html"
-                    class="global-link"
+                    className="global-link"
                     title="Breana Flatley"
                   ></a>
                   <img
@@ -107,24 +107,24 @@ const Recommended = () => {
                   />
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
-          <div class="item-content">
-            <h2 class="item-title dark:text-darkModeTextColor">
-              <a
+          <div className="item-content">
+            <h2 className="item-title dark:text-darkModeTextColor">
+              <a className=' dark:text-white'
                 href="every-day-in-every-city-and-town-across-the-country.html"
               >Every day, in every city and town across the country</a
               >
             </h2>
           </div>
         </article>
-        <article class="item is-special is-image">
+        <article className="item is-special is-image">
           <div
-            class="item-image global-image global-image-orientation global-radius"
+            className="item-image global-image global-image-orientation global-radius"
           >
             <a
               href="i-work-best-when-my-space-is-filled-with-inspiration.html"
-              class="global-link"
+              className="global-link"
               aria-label="I work best when my space is filled with inspiration"
             ></a>
             <img
@@ -133,14 +133,14 @@ const Recommended = () => {
               loading="lazy"
               alt=""
             />
-            <div class="item-authors global-authors">
+            {/* <div className="item-authors global-authors">
               <div>
                 <div
-                  class="item-author global-item-author is-image global-image"
+                  className="item-author global-item-author is-image global-image"
                 >
                   <a
                     href="author/liza.html"
-                    class="global-link"
+                    className="global-link"
                     title="Liza Harber"
                   ></a>
                   <img
@@ -150,11 +150,11 @@ const Recommended = () => {
                   />
                 </div>
                 <div
-                  class="item-author global-item-author is-image global-image"
+                  className="item-author global-item-author is-image global-image"
                 >
                   <a
                     href="author/daryl.html"
-                    class="global-link"
+                    className="global-link"
                     title="Daryl Wehner"
                   ></a>
                   <img
@@ -164,24 +164,24 @@ const Recommended = () => {
                   />
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
-          <div class="item-content">
-            <h2 class="item-title dark:text-darkModeTextColor">
-              <a
+          <div className="item-content">
+            <h2 className="item-title dark:text-darkModeTextColor">
+              <a className=' dark:text-white'
                 href="i-work-best-when-my-space-is-filled-with-inspiration.html"
               >I work best when my space is filled with inspiration</a
               >
             </h2>
           </div>
         </article>
-        <article class="item is-special is-image">
+        <article className="item is-special is-image">
           <div
-            class="item-image global-image global-image-orientation global-radius"
+            className="item-image global-image global-image-orientation global-radius"
           >
             <a
               href="i-have-my-own-definition-of-minimalism.html"
-              class="global-link"
+              className="global-link"
               aria-label="I have my own definition of minimalism"
             ></a>
             <img
@@ -190,14 +190,14 @@ const Recommended = () => {
               loading="lazy"
               alt=""
             />
-            <div class="item-authors global-authors">
+            {/* <div className="item-authors global-authors">
               <div>
                 <div
-                  class="item-author global-item-author is-image global-image"
+                  className="item-author global-item-author is-image global-image"
                 >
                   <a
                     href="author/breana.html"
-                    class="global-link"
+                    className="global-link"
                     title="Breana Flatley"
                   ></a>
                   <img
@@ -207,23 +207,23 @@ const Recommended = () => {
                   />
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
-          <div class="item-content">
-            <h2 class="item-title dark:text-darkModeTextColor">
-              <a href="i-have-my-own-definition-of-minimalism.html"
+          <div className="item-content">
+            <h2 className="item-title dark:text-darkModeTextColor">
+              <a href="i-have-my-own-definition-of-minimalism.htm" className=' dark:text-white'
               >I have my own definition of minimalism</a
               >
             </h2>
           </div>
         </article>
-        <article class="item is-special is-image">
+        <article className="item is-special is-image">
           <div
-            class="item-image global-image global-image-orientation global-radius"
+            className="item-image global-image global-image-orientation global-radius"
           >
             <a
               href="change-your-look-and-your-attitude.html"
-              class="global-link"
+              className="global-link"
               aria-label="Change your look and your attitude"
             ></a>
             <img
@@ -232,14 +232,14 @@ const Recommended = () => {
               loading="lazy"
               alt=""
             />
-            <div class="item-authors global-authors">
+            {/* <div className="item-authors global-authors">
               <div>
                 <div
-                  class="item-author global-item-author is-image global-image"
+                  className="item-author global-item-author is-image global-image"
                 >
                   <a
                     href="author/damian.html"
-                    class="global-link"
+                    className="global-link"
                     title="Damian Erdman"
                   ></a>
                   <img
@@ -249,23 +249,23 @@ const Recommended = () => {
                   />
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
-          <div class="item-content">
-            <h2 class="item-title dark:text-darkModeTextColor">
-              <a href="change-your-look-and-your-attitude.html"
+          <div className="item-content">
+            <h2 className="item-title dark:text-darkModeTextColor">
+              <a href="change-your-look-and-your-attitude.html" className=' dark:text-white'
               >Change your look and your attitude</a
               >
             </h2>
           </div>
         </article>
-        <article class="item is-special is-image">
+        <article className="item is-special is-image">
           <div
-            class="item-image global-image global-image-orientation global-radius"
+            className="item-image global-image global-image-orientation global-radius"
           >
             <a
               href="the-difference-is-quality.html"
-              class="global-link"
+              className="global-link"
               aria-label="The difference is quality"
             ></a>
             <img
@@ -274,14 +274,14 @@ const Recommended = () => {
               loading="lazy"
               alt=""
             />
-            <div class="item-authors global-authors">
+            <div className="item-authors global-authors">
               <div>
                 <div
-                  class="item-author global-item-author is-image global-image"
+                  className="item-author global-item-author is-image global-image"
                 >
                   <a
                     href="author/brenda.html"
-                    class="global-link"
+                    className="global-link"
                     title="Brenda Reichel"
                   ></a>
                   <img
@@ -291,11 +291,11 @@ const Recommended = () => {
                   />
                 </div>
                 <div
-                  class="item-author global-item-author is-image global-image"
+                  className="item-author global-item-author is-image global-image"
                 >
                   <a
                     href="author/liza.html"
-                    class="global-link"
+                    className="global-link"
                     title="Liza Harber"
                   ></a>
                   <img
@@ -307,9 +307,9 @@ const Recommended = () => {
               </div>
             </div>
           </div>
-          <div class="item-content">
-            <h2 class="item-title dark:text-darkModeTextColor">
-              <a href="the-difference-is-quality.html"
+          <div className="item-content">
+            <h2 className="item-title dark:text-darkModeTextColor">
+              <a href="the-difference-is-quality.html" className=' dark:text-white'
               >The difference is quality</a
               >
             </h2>

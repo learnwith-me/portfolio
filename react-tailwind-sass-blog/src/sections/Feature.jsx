@@ -28,7 +28,7 @@ const Feature = () => {
                 <div className="global-padding">
                     <div className="featured-subtitle global-subtitle">
                         <small className="global-subtitle-title dark:text-darkModeTextColor"
-                        >Get started with our <span>best stories</span></small
+                        >Start learning by <span>Categories</span></small
                         >
                         {/* <div className="featured-navigation">
                             <button
@@ -73,7 +73,7 @@ const Feature = () => {
                                     return (
                                         <article className="carousel-cell item is-featured is-small">
                                             <div
-                                                className="item-image global-image global-image-orientation global-radius is-landscape"
+                                                className="item-image global-image global-image-orientation global-radius is-square"
                                             >
                                                 
                                                     <Link to={`/category/${catItems.slug}`}
@@ -86,7 +86,7 @@ const Feature = () => {
                                                     loading="lazy"
                                                     alt=""
                                                 />
-                                                <div className="item-authors global-authors">
+                                                {/* <div className="item-authors global-authors">
                                                     <div>
                                                         <div
                                                             className="item-author global-item-author is-image global-image"
@@ -103,20 +103,20 @@ const Feature = () => {
                                                             />
                                                         </div>
                                                     </div>
-                                                </div>
+                                                </div> */}
                                             </div>
                                             <div className="item-content">
-                                                <div className="item-tags global-tags">
+                                                {/* <div className="item-tags global-tags">
                                                     <a href="tag/design.html">Design</a
                                                     ><span
                                                     ><a href="tag/idea.html">Idea</a
                                                     ><a href="tag/review.html">Review</a></span
                                                     >
-                                                </div>
+                                                </div> */}
                                                 <h2 className="item-title">
-                                                    <a href="#" className='dark:text-darkModeTextColor'>
+                                                    <Link to={`/category/${catItems.slug}`} href="#" className='dark:text-darkModeTextColor'>
                                                         {catItems.name}
-                                                    </a>
+                                                    </Link>
                                                 </h2>
                                                 <p className="item-excerpt dark:text-darkModeTextColor">
                                                     {catItems.description}

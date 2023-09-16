@@ -23,7 +23,7 @@ const CategoryContainer = () => {
 
 	if (data) {
 		return (
-			<main class="global-main">
+			<main className="global-main">
 				<SingleCategory catData={data.data} />
 			</main>
 		)

@@ -25,14 +25,14 @@ const Home = ({catData}) => {
                         <Feature />
                     </div>
                 </div>
-                <div class="loop-section global-padding">
+                <div className="loop-section global-padding dark:bg-darkModeBlack !mb-0">
                     <Authors />
                     <Posts singleCatData={cateData} params={params} displayCount={displayCount} setDisplayCount={setDisplayCount} handleLoadMore={handleLoadMore} />
                 </div>
                 {displayCount < cateData.length && (
-                    <div class="pagination-section">
+                    <div className="pagination-section dark:bg-darkModeBlack">
                         <a href="page/2.html" aria-label="Load more"></a>
-                        <button class="global-button dark:bg-ghost-accent-color" onClick={handleLoadMore}>Load more</button>
+                        <button className="global-button dark:bg-ghost-accent-color" onClick={handleLoadMore}>Load more</button>
                     </div>
                 )}
                 <Recommended />
