@@ -14,6 +14,7 @@
 
 * {
     font-family: "Work Sans", sans-serif;
+    scroll-behavior: smooth;
 }
 
 
@@ -26,5 +27,47 @@ main {
     max-width: 1190px;
     @media (min-width: 768px) and (max-width: 1199.98px)  {
         padding: 0 40px;
+    }
+}
+
+#navbarSupportedContent {
+    ul {
+        @media (min-width: 768px) and (max-width: 1199.98px)  {
+            position: absolute;
+            width: 100px;
+            right: 40px;
+            background: #1095ff;
+            z-index: 1;
+            gap: 0px !important;
+            text-align: left !important;
+        }
+        @include respond-below(sm) {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            background: #1095ff;
+            z-index: 1;
+            gap: 0px !important;
+            text-align: left !important;
+            align-items: flex-start !important;
+            
+        }
+        li {
+            @include respond-below(sm) {
+                width: 100%;
+                padding-left: 15px;
+                border-bottom: #38a7ff solid 1px;
+            }
+            a {
+                @media (min-width: 768px) and (max-width: 1199.98px)  {
+                    color: #fff;
+                    text-align: left;
+                }
+                @include respond-below(sm) {
+                    color: #fff;
+                    text-align: left;
+                }
+            }
+        }
     }
 }

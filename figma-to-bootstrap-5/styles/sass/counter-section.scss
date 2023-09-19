@@ -2,6 +2,10 @@ main {
     .counter-section {
         margin-top: 100px;
         margin-bottom: 100px;
+        @include respond-below(sm) {
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
         .container {
             ul {
                 &.counter-section-body {

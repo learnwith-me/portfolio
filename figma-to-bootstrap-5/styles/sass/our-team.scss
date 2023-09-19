@@ -49,6 +49,30 @@ main {
                             margin-bottom: 20px;
                             .overlay {
                                 display: none;
+                                ul {
+                                    justify-content: center;
+                                    align-items: center;
+                                    height: 100%;
+                                    gap: 18px;
+                                    li {
+                                        position: relative;
+                                        &::after {
+                                            content: "";
+                                            border-right: #fff solid 1px;
+                                            position: absolute;
+                                            width: 1px;
+                                            height: 16px;
+                                            top: 5px;
+                                            right: 30px;
+                                        }
+                                        &:first-of-type {
+                                            &::after {
+                                                content: "";
+                                                border-right: none;
+                                            }
+                                        }
+                                    }
+                                }
                             }
                         }
                         
