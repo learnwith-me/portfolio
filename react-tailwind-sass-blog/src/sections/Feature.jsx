@@ -8,7 +8,13 @@ import { FetchCategory } from '../config/BaseApi'
 import { Link } from 'react-router-dom'
 
 const flickityOptions = {
-    initialIndex: 1
+    initialIndex: 1,
+    cellAlign: 'left',
+    wrapAround: true,
+    contain: true,
+    autoPlay: true, // Enable autoplay
+    pauseAutoPlayOnHover: false,
+    pauseAutoPlayOnNavigate: false,
 }
 
 const Feature = () => {

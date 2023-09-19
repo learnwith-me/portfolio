@@ -1,0 +1,96 @@
+main {
+    .about-section {
+       .container {
+            .about-head {
+                padding-top: 90px;
+                @include respond-below(sm) {
+                    padding-top: 20px;
+                }
+                @media (min-width: 768px) and (max-width: 1199.98px)  {
+                    padding-top: 20px;
+                }
+                div {
+                    &.commom-content-area {
+                        @include respond-below(sm) {
+                            order: 2;
+                        }
+                    }
+                    
+                    .about-details {
+                        
+                        padding-right: 100px;
+                        @include respond-below(sm) {
+                            padding-top: 20px;
+                            padding-right: unset;
+                        }
+                        @media (min-width: 768px) and (max-width: 1199.98px)  {
+                            padding-top: 20px;
+                            padding-right: unset;
+                        }
+                        >span {
+                            font-size: 18px;
+                            font-weight: 500;
+                            color: #292929;
+                            margin-bottom: 16px;
+                            display: inline-block;
+                            letter-spacing: 2px;
+                        }
+                        h3 {
+                            font-size: 32px;
+                            font-weight: 700;
+                            line-height: 37px;
+                            margin-bottom: 16px;
+                            @include respond-below(sm) {
+                                font-size: 24px;
+                                line-height: 30px;
+                            }
+                        }
+                        >p {
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 24px;
+                            color: #292929;
+                            margin-bottom: 30px;
+                        }
+                        .award-win-co {
+                            font-weight: 500;
+                            font-size: 18px;
+                            margin-bottom: 10px;
+                        }
+                        .btn-primary {
+                            padding: 12px 35px;
+                            @include respond-below(sm) {
+                                margin-bottom: 30px;
+                            }
+                        }
+                    }
+                    .hero-partner {
+                        >p {
+                            font-size: 18px;
+                            font-weight: 500;
+                            letter-spacing: 2px;
+                            margin-bottom: 16px;
+                        }
+                        h2 {
+                            font-size: 32px;
+                            font-weight: 700;
+                            @include respond-below(sm) {
+                                font-size: 28px;
+                            }
+                        }
+                    }
+                }
+                .about-img {
+                    img {
+                        width: 100%;
+                        height: auto;
+                        @media (min-width: 768px) and (max-width: 1199.98px)  {
+                            // position: absolute;
+                            // bottom: 0;
+                        }   
+                    }
+                }
+            }
+       }
+    }
+}

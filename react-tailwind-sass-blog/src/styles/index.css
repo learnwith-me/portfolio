@@ -19,12 +19,42 @@
     @apply text-sm rounded-lg bg-gray-900 text-white py-1 px-2 hover:bg-white hover:text-gray-900 border-x border border-gray-900 cursor-pointer;
 }
 
+
+.flickity-prev-next-button.previous {
+    top: -25px;
+    right: 0;
+    left: unset !important;
+    background: transparent;
+}
+.flickity-prev-next-button.next {
+    top: -25px;
+    right: -20px !important;
+    background: transparent;
+}
+.flickity-button:focus {
+    box-shadow: unset !important;
+}
+.flickity-button:hover {
+    background: transparent !important;
+}
+
 .dark {
     .post-content pre > code {
             color: #fff;
             background-color: #2b2b2b;
         }
+
+    .flickity-button {
+        color: #fff;
+       
+    }
 }
+
+/* #toggleDark {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+} */
 
 pre {
     border-radius: 20%;

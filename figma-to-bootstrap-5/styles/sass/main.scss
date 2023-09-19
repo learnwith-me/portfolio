@@ -1,0 +1,30 @@
+@import './variables.scss',
+        './hero-section.scss',
+        './about-us.scss',
+        './services.scss',
+        './our-team.scss',
+        './our-portfolio.scss',
+        './counter-section.scss',
+        './testimonials.scss',
+        './blog.scss',
+        './footer.scss',
+        './trusted-partners.scss',
+        './color-override.scss',
+        './nav.scss';
+
+* {
+    font-family: "Work Sans", sans-serif;
+}
+
+
+
+main {
+    background: url(../../assets/hero-bg.png) no-repeat;
+}
+
+.container {
+    max-width: 1190px;
+    @media (min-width: 768px) and (max-width: 1199.98px)  {
+        padding: 0 40px;
+    }
+}

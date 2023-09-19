@@ -13,7 +13,7 @@ const Recommended = () => {
     <div className="special-section global-padding dark:bg-darkModeBlack">
       <div className="special-subtitle global-subtitle">
         <small className="global-subtitle-title"
-        ><span>Recommended</span></small
+        ><div className=' dark:text-white'>Store setup underway, bringing quality clothing, exceptional style soon.</div></small
         >
       </div>
       <div className="special-wrap !mb-0">
@@ -22,7 +22,7 @@ const Recommended = () => {
             className="item-image global-image global-image-orientation global-radius"
           >
             <a
-              href="the-trick-to-getting-more-done-is-to-have-the-freedom-to-roam-around.html"
+              href="https://patils.shop/" target="blank"
               className="global-link"
               aria-label="The trick to getting more done is to have the freedom to roam around"
             ></a>
@@ -51,22 +51,22 @@ const Recommended = () => {
               </div>
             </div> */}
           </div>
-          <div className="item-content">
+          {/* <div className="item-content">
             <h2 className="item-title dark:text-darkModeTextColor">
               <a className=' dark:text-white'
-                href="the-trick-to-getting-more-done-is-to-have-the-freedom-to-roam-around.html"
+                href="https://patils.shop/" target="blank"
               >The trick to getting more done is to have the freedom to
                 roam around</a
               >
             </h2>
-          </div>
+          </div> */}
         </article>
         <article className="item is-special is-image">
           <div
             className="item-image global-image global-image-orientation global-radius"
           >
             <a
-              href="every-day-in-every-city-and-town-across-the-country.html"
+              href="https://patils.shop/" target="blank"
               className="global-link"
               aria-label="Every day, in every city and town across the country"
             ></a>
@@ -109,21 +109,21 @@ const Recommended = () => {
               </div>
             </div> */}
           </div>
-          <div className="item-content">
+          {/* <div className="item-content">
             <h2 className="item-title dark:text-darkModeTextColor">
               <a className=' dark:text-white'
-                href="every-day-in-every-city-and-town-across-the-country.html"
+                href="https://patils.shop/" target="blank"
               >Every day, in every city and town across the country</a
               >
             </h2>
-          </div>
+          </div> */}
         </article>
         <article className="item is-special is-image">
           <div
             className="item-image global-image global-image-orientation global-radius"
           >
             <a
-              href="i-work-best-when-my-space-is-filled-with-inspiration.html"
+              href="https://patils.shop/" target="blank"
               className="global-link"
               aria-label="I work best when my space is filled with inspiration"
             ></a>
@@ -166,21 +166,21 @@ const Recommended = () => {
               </div>
             </div> */}
           </div>
-          <div className="item-content">
+          {/* <div className="item-content">
             <h2 className="item-title dark:text-darkModeTextColor">
               <a className=' dark:text-white'
-                href="i-work-best-when-my-space-is-filled-with-inspiration.html"
+                href="https://patils.shop/" target="blank"
               >I work best when my space is filled with inspiration</a
               >
             </h2>
-          </div>
+          </div> */}
         </article>
         <article className="item is-special is-image">
           <div
             className="item-image global-image global-image-orientation global-radius"
           >
             <a
-              href="i-have-my-own-definition-of-minimalism.html"
+              href="https://patils.shop/" target="blank"
               className="global-link"
               aria-label="I have my own definition of minimalism"
             ></a>
@@ -209,20 +209,20 @@ const Recommended = () => {
               </div>
             </div> */}
           </div>
-          <div className="item-content">
+          {/* <div className="item-content">
             <h2 className="item-title dark:text-darkModeTextColor">
-              <a href="i-have-my-own-definition-of-minimalism.htm" className=' dark:text-white'
+              <a href="https://patils.shop/" target="blank" className=' dark:text-white'
               >I have my own definition of minimalism</a
               >
             </h2>
-          </div>
+          </div> */}
         </article>
         <article className="item is-special is-image">
           <div
             className="item-image global-image global-image-orientation global-radius"
           >
             <a
-              href="change-your-look-and-your-attitude.html"
+              href="https://patils.shop/" target="blank"
               className="global-link"
               aria-label="Change your look and your attitude"
             ></a>
@@ -251,13 +251,13 @@ const Recommended = () => {
               </div>
             </div> */}
           </div>
-          <div className="item-content">
+          {/* <div className="item-content">
             <h2 className="item-title dark:text-darkModeTextColor">
-              <a href="change-your-look-and-your-attitude.html" className=' dark:text-white'
+              <a href="https://patils.shop/" target="blank" className=' dark:text-white'
               >Change your look and your attitude</a
               >
             </h2>
-          </div>
+          </div> */}
         </article>
         <article className="item is-special is-image">
           <div
@@ -274,7 +274,7 @@ const Recommended = () => {
               loading="lazy"
               alt=""
             />
-            <div className="item-authors global-authors">
+            {/* <div className="item-authors global-authors">
               <div>
                 <div
                   className="item-author global-item-author is-image global-image"
@@ -305,15 +305,15 @@ const Recommended = () => {
                   />
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
-          <div className="item-content">
+          {/* <div className="item-content">
             <h2 className="item-title dark:text-darkModeTextColor">
-              <a href="the-difference-is-quality.html" className=' dark:text-white'
+              <a href="https://patils.shop/" target="blank" className=' dark:text-white'
               >The difference is quality</a
               >
             </h2>
-          </div>
+          </div> */}
         </article>
       </div>
     </div>

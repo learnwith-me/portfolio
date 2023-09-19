@@ -1,0 +1,155 @@
+main {
+    .our-portfolio-section {
+       .container {
+            .our-portfolio-head {
+                padding-top: 30px;
+                text-align: center;
+                @include respond-below(sm) {
+                    padding-top: 20px;
+                }
+                @media (min-width: 768px) and (max-width: 1199.98px)  {
+                    padding-top: 20px;
+                }
+
+                >span {
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: #292929;
+                    margin-bottom: 16px;
+                    display: inline-block;
+                    letter-spacing: 2px;
+                }
+                h3 {
+                    font-size: 32px;
+                    font-weight: 700;
+                    line-height: 37px;
+                    margin-bottom: 16px;
+                    @include respond-below(sm) {
+                        font-size: 24px;
+                        line-height: 30px;
+                    }
+                }
+                
+            }
+            ul {
+                &.our-portfolio-card-body {
+                    margin-top: 45px;
+                    li {
+                        // margin-right: 20px;
+                        border-radius: 5px;
+                        &:last-of-type {
+                            margin-right: 0px;
+                        }
+                        .our-portfolio-card {
+                            border-radius: 5px;
+                            position: relative;
+
+                        figure {
+                            background-color: #EEEEEE;
+                            margin: 0;
+                            img {
+                                width: 100%;
+                                height: auto;
+                            }
+                            .overlay {
+                                display: none;
+                                .o-con {
+                                    padding: 0 25px;
+                                    bottom: -118px;
+                                    position: relative;
+                                }
+                                .work-title {
+                                    font-size: 20px;
+                                    font-weight: 500;
+                                    color: #fff;
+                                    // position: absolute;
+                                    bottom: 77px;
+                                    width: 100%;
+                                    text-align: left;
+                                    // padding-left: 25px;
+                                    line-height: 1.2;
+                                    .work-profile {
+                                        font-size: 16px !important;
+                                        font-weight: 400;
+                                        color: #fff;
+                                    }
+                                }
+                            }
+                        }
+                        
+                        .our-portfolio-card-name {
+                            font-size: 20px;
+                            font-weight: 600;
+                            text-align: center;
+                            margin-bottom: 5px;
+                        }
+                        .our-portfolio-card-profile {
+                            padding: 0 0 20px 0;
+                            display: block;
+                            text-align:center;
+                            font-size: 14px;
+                            font-weight: 400;
+                        }
+                        }
+
+                        &:hover, &.active {
+                            .our-portfolio-card {
+                                box-shadow: 0px 4px 20px 0px #2D66F633;
+                                // background: $primaryColor !important;
+                                figure {
+                                    position: relative;
+                                    overflow: hidden;
+                                    .overlay {
+                                        display: block;
+                                        background: linear-gradient(1deg, #1195FF 12.55%, rgba(217, 217, 217, 0) 100%);
+                                        width: 100%;
+                                        height: 100%;
+                                        position: absolute;
+                                        top: 50px;
+                                        z-index: 1;
+                                    }
+                                }
+                                .our-portfolio-card-name {
+                                    color: $primaryColor;
+                                }
+                            }
+                        }
+                    }
+
+                    
+                }
+            }
+
+            .portfolio-dots {
+                ul {
+                    gap: 10px;
+                    li {
+                        span {
+                            border-radius: 50%;
+                            width: 9px;
+                            height: 9px;
+                            background: #DEDEDE;
+                            overflow: hidden;
+                            display: block;
+                        }
+                       
+                        &.active {
+                            padding: 2px;
+                            border: #1195ff solid 1px;
+                            border-radius: 50%;
+                            span {
+                                border-radius: 50%;
+                                width: 9px;
+                                height: 9px;
+                                background-color: $primaryColor;
+                                overflow: hidden;
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+           
+       }
+    }
+}

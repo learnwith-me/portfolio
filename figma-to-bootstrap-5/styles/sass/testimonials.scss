@@ -1,0 +1,131 @@
+main {
+    .testimmonials-section {
+       .container {
+            .testimmonials-head {
+                // padding-top: 90px;
+                text-align: center;
+                @include respond-below(sm) {
+                    padding-top: 20px;
+                }
+                @media (min-width: 768px) and (max-width: 1199.98px)  {
+                    padding-top: 20px;
+                }
+
+                >span {
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: #292929;
+                    margin-bottom: 16px;
+                    display: inline-block;
+                    letter-spacing: 2px;
+                }
+                h3 {
+                    font-size: 32px;
+                    font-weight: 700;
+                    line-height: 37px;
+                    margin-bottom: 16px;
+                    @include respond-below(sm) {
+                        font-size: 24px;
+                        line-height: 30px;
+                    }
+                }
+                
+            }
+            ul {
+                &.testimmonials-card-body {
+                    margin-top: 90px;
+                    li {
+                        // margin-right: 20px;
+                        border-radius: 5px;
+                        &:last-of-type {
+                            margin-right: 0px;
+                        }
+                        .testimmonials-card {
+                            border-radius: 5px;
+                            
+                        .testimmonials-card-icon {
+                            display: inline-block;
+                            border-radius: 50%;
+                            position: absolute;
+                            left: 50%;
+                            transform: translate(-50%, -35px);
+                            background-color: #fff;
+                        }
+                        .testimmonials-card-title {
+                            font-size: 20px;
+                            font-weight: 600;
+                            text-align: center;
+                            margin-bottom: 6px;
+                            margin-top: 56px;
+                            color: #292929;
+                            display: block;
+                        }
+                        .testimmonials-profile {
+                            font-size: 16px;
+                            font-weight: 400;
+                            text-align: center;
+                            margin-bottom: 20px;
+                            color: #292929;
+                            display: block;
+                        }
+                        .testimmonials-card-desc {
+                            padding: 0 28px 20px 28px;
+                            display: inline-block;
+                            text-align:center;
+                            font-size: 14px;
+                            font-weight: 400;
+                        }
+                        .testimmonials-ratings {
+                            padding-bottom: 22px;
+                        }
+                        }
+
+                        &:hover, &.active {
+                            .testimmonials-card {
+                                box-shadow: 0px 4px 20px 0px #0C528933;
+                                background: $primaryColor !important;
+                                .testimmonials-card-icon {
+                                    border-color: $primaryColor !important;
+                                }
+                                .testimmonials-card-title, .testimmonials-card-desc, .testimmonials-profile {
+                                    color: #fff !important;
+                                }
+                            }
+                        }
+                    }
+
+                    
+                }
+            }
+            .portfolio-dots {
+                ul {
+                    gap: 10px;
+                    li {
+                        span {
+                            border-radius: 50%;
+                            width: 9px;
+                            height: 9px;
+                            background: #DEDEDE;
+                            overflow: hidden;
+                            display: block;
+                        }
+                       
+                        &.active {
+                            padding: 2px;
+                            border: #1195ff solid 1px;
+                            border-radius: 50%;
+                            span {
+                                border-radius: 50%;
+                                width: 9px;
+                                height: 9px;
+                                background-color: $primaryColor;
+                                overflow: hidden;
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+       }
+    }
+}

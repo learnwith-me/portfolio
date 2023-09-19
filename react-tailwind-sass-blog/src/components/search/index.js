@@ -79,7 +79,7 @@ const TopSearch = ({searchResults}) => {
                
        </div>
         ) : (
-          <p>No results found.</p>
+          <p className=' dark:text-white'>No results found.</p>
         )}
         </div>
     </main>

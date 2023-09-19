@@ -2,14 +2,12 @@ import React, { useState, useEffect } from 'react';
 
 const DarkModeToggle = () => {
   const [isDarkMode, setIsDarkMode] = useState(
-    localStorage.getItem('darkMode') === 'true' // Retrieve mode from local storage
+    localStorage.getItem('darkMode') === 'true'
   );
 
   useEffect(() => {
-    // Set the mode in local storage when it changes
     localStorage.setItem('darkMode', isDarkMode);
-    
-    // Update the class on the document element
+
     if (isDarkMode) {
       document.documentElement.classList.add('dark');
     } else {
@@ -23,8 +21,16 @@ const DarkModeToggle = () => {
 
   return (
     <div>
-      <button id="toggleDark" className=' dark:text-white' onClick={toggleDarkMode}>
-        Toggle Dark Mode
+      <button id="toggleDark" className=' fixed md:top-[20px] bottom-[5px] md:bottom-[unset] right-[10px] md:right-[20px]' onClick={toggleDarkMode}>
+        {isDarkMode ? (
+          <div className=" dark:text-white">
+            <span className="sun-icon text-[30px]">☀️</span> 
+          </div>
+        ) : (
+          <>
+            <span className="moon-icon text-[30px]">🌚</span>
+          </>
+        )}
       </button>
     </div>
   );

@@ -1,0 +1,33 @@
+header {
+    .container {
+        .navbar-brand {
+            font-size: 26px;
+            font-weight: 700;
+        }
+        .navbar-collapse {
+            ul {
+                &.navbar-nav {
+                    li {
+                        a {
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: #555555;
+
+                            &:hover {
+                                color: $primaryColor;
+                            }
+
+                            &.active {
+                                color: $primaryColor;
+                            }
+
+                            &.btn-primary {
+                                padding: 12px 35px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

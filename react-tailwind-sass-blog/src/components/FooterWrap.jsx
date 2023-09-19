@@ -5,6 +5,7 @@ import LinkedIn from '../icons/LinkedIn'
 import Instagram from '../icons/Instagram'
 import WhatsApp from '../icons/WhatsApp'
 import Heart from '../icons/Heart'
+import DarkModeToggle from './DarkModeToggle'
 
 const FooterWrap = () => {
     return (
@@ -18,16 +19,23 @@ const FooterWrap = () => {
                 </div>
                 <p className="footer-desciption dark:text-white w-full">
                     {/* Feel free to copy. If you need any help, ping me ! */}
-                    There is First Time for Everything...
+                    {/* There is First Time for Everything... */}
+                    “In learning you will teach, and in teaching you will learn.” 
                 </p>
             </div>
             <div className="footer-nav !grow-[90] text-">
             <div className="footer-nav-column dark:text-white">
                     <small>About</small>
                     <ul>
-                        <li><a href="style-guide.html" className='dark:text-white'>Blog</a></li>
-                        <li><a href="style-guide.html" className='dark:text-white'>About Me</a></li>
-                        <li><a href="features.html" className='dark:text-white'>My Passion</a></li>
+                    <li>
+                                    <Link className=' dark:text-white' to="/">Home</Link>
+                                </li>
+                                <li>
+                                    <Link className=' dark:text-white' to="/about-me">About Me</Link>
+                                </li>
+                                <li>
+                                    <Link className=' dark:text-white' to="/my-passion">My Passion</Link>
+                                </li>
                     </ul>
                 </div>
                 <div className="footer-nav-column dark:text-white">
@@ -36,13 +44,13 @@ const FooterWrap = () => {
                     <li>
                             <a href="javascript:void(0)" className='dark:text-white relative'>
                                 High on Javascript
-                                <span class="absolute -top-[12px] md:top-[5px] block -left-[2px] md:-left-[34px] text-[8px] bg-[#f922a5] rounded-md py-0 px-[6px] text-white ">New</span>
+                                <span class="absolute -top-[12px] md:top-[-12px] block -left-[2px] md:-left-[34px] text-[8px] bg-[#f922a5] rounded-md py-0 px-[6px] text-white ">comming soon</span>
                             </a>
                         </li>
                         <li>
                             <a href="javascript:void(0)" className='dark:text-white relative'>
                                 Learn React JS In 30 Days
-                                <span class="absolute -top-[12px] md:top-[5px] block -left-[2px] md:-left-[34px] text-[8px] bg-[#f922a5] rounded-md py-0 px-[6px] text-white ">New</span>
+                                <span class="absolute -top-[12px] md:top-[-12px] block -left-[2px] md:-left-[34px] text-[8px] bg-[#f922a5] rounded-md py-0 px-[6px] text-white ">comming soon</span>
                             </a>
                         </li>
                     </ul>
@@ -52,8 +60,8 @@ const FooterWrap = () => {
                     <ul>
                         <li>
                             <a href="javascript:void(0)" className='dark:text-white relative'>
-                                Learn new words daily
-                                <span class="absolute -top-[12px] md:top-[5px] block -left-[2px] md:-left-[34px] text-[8px] bg-[#f922a5] rounded-md py-0 px-[6px] text-white ">New</span>
+                                Learn comming soon words daily
+                                <span class="absolute -top-[12px] md:top-[-12px] block -left-[2px] md:-left-[34px] text-[8px] bg-[#f922a5] rounded-md py-0 px-[6px] text-white ">comming soon</span>
                             </a>
                         </li>
                     </ul>
@@ -75,7 +83,7 @@ const FooterWrap = () => {
 
             <div className="footer-copyright dark:text-white">
                 <div className="flex items-center justify-center flex-1 space-x-6 mt-0 mb-1">
-                    <a href="https://github.com/coderbotics1/" aria-label="Github Portfolio" target="_blank" className="whitespace-nowrap text-sm nav-icon github">
+                    <a href="https://github.com/learnwith-me" aria-label="Github Portfolio" target="_blank" className="whitespace-nowrap text-sm nav-icon github">
                         <GitHub2 />
                     </a>
                     <a href="https://www.linkedin.com/in/coderbotics/" aria-label="Check my Linkedin" target="_blank" className="whitespace-nowrap text-sm nav-icon">
@@ -95,6 +103,8 @@ const FooterWrap = () => {
                         <span>Harshad Manohar Patil</span>
                     </div>
                 </div>
+
+                <DarkModeToggle />
             </div>
     )
 }

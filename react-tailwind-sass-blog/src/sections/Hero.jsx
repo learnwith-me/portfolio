@@ -3,7 +3,7 @@ import React from 'react'
 const Hero = () => {
     return (
         <div className="hero-content global-padding">
-            <h1 className="hero-title hero-title-large dark:text-white"><span className=' md:-ml-20 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#ff7170] to-[#ffe57f] inline'>〈Learn With Me /〉</span>Master TECH. programming skills with me.</h1>
+            <h1 className="hero-title hero-title-large dark:text-white"><span className=' md:-ml-20 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#ff7170] to-[#ffe57f] inline'>〈Learn With Me /〉</span>Amplify your programming abilities and expertise with focused learning and dedicated practice.</h1>
             <div className="subscribe-section">
             <button className="global-button bg-black dark:bg-ghost-accent-color" type="submit">Start Learning with me...</button>
                 {/* <div className="subscribe-wrap">

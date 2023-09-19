@@ -41,6 +41,7 @@ function App() {
 			  .then((response) => response.json())
 			  .then((data) => {
 				setSearchResults(data);
+				openSearch(); // Call openSearch after setting the search results
 			  })
 			  .catch((error) => {
 				console.error('Error fetching data:', error);
@@ -66,8 +67,6 @@ function App() {
 		fetchData(); // Initial fetch
 	  
 	  }, [searchQuery]);
-	  
-  
 	
   
 	const handleSearchChange = (event) => {
@@ -79,8 +78,8 @@ function App() {
 			<Nav openSearch={openSearch} />
 			<Routes>
 				<Route path="/" exact element={<HomeContainer />} />
-				<Route path="about-me" exact element={<AboutUs />} />
-				<Route path="my-passion" exact element={<MyPassion /> } />
+				<Route path="/about-me" exact element={<AboutUs />} />
+				<Route path="/my-passion" exact element={<MyPassion /> } />
 				<Route path="/category/:slug"  element={<CategoryContainer />} />
 				<Route path="/singlepost/:id/:slug"  element={<SinglePostContainer />} />
 				<Route path="/doc"  element={<DocumentContainer />} />
