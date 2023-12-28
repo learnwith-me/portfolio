@@ -1,6 +1,7 @@
 import moment from 'moment';
 import React from 'react'
 import SideBar from './SideBar';
+import { Link } from 'react-router-dom';
 
 const SinglePost = ({ singlePostData, id, slug }) => {
 
@@ -10,10 +11,10 @@ const SinglePost = ({ singlePostData, id, slug }) => {
         <article className="post-section">
             <div className="post-header dark:bg-darkModeBlack">
                 <div className="post-header-wrap global-padding">
-                    <div className="post-header-container">
-                        <div className="post-header-content">
+                    <div className="post-header-container !pb-0">
+                        <div className="post-header-content !max-w-full">
                             <div>
-                                <div className="post-tags global-tags"><a href="/tag/lifestyle/">Lifestyle</a><a href="/tag/people/">People</a><a href="/tag/review/">Review</a></div>
+                                <div className="post-tags global-tags"><Link to={`/category/${postArrayData.categories[0].slug}`}>{postArrayData.categories[0].cat_name}</Link></div>
                                 <h1 className="post-title global-title dark:text-white">{postArrayData.title}</h1>
                                 <p className="post-excerpt global-excerpt dark:text-white">{postArrayData.excerpt}</p>
                             </div>
@@ -21,26 +22,26 @@ const SinglePost = ({ singlePostData, id, slug }) => {
                                 <div className="post-authors global-authors">
                                     <div>
                                         <div className="post-item-author global-item-author is-image global-image">
-                                            <a href="/author/nichole/" className="global-link" title="Nichole Becker"></a>
+                                            <a href="#" className="global-link" title="Nichole Becker"></a>
                                             <img src={postArrayData?.author_pic?.sizes?.thumbnail} loading="lazy" alt="Nichole Becker" />							
                                         </div>
                                 
                                     </div>
                                 </div>
                                 <div className="post-meta-content">
-                                    <a href="/author/nichole/" className=' dark:text-white'>{postArrayData.author}</a>
+                                    <a href="#" className=' dark:text-white'>{postArrayData.author}</a>
                                     <time datetime="2022-03-16" className=' dark:text-white'>{moment(postArrayData.date).format("LL")} — 4 minutes read</time>
                                 </div>
                             </div>
                         </div>
-                        <div className="post-header-image">
+                        {/* <div className="post-header-image">
                             <figure>
                                 <div className="global-image global-image-orientation global-radius">
                                     <img sizes="(max-width:480px) 300px, (max-width:768px) 600px, 1200px" src={postArrayData?.featured_image?.medium_large} alt={postArrayData.title} title={postArrayData.title} />
                                 </div>
-                                {/* <figcaption>Photo by <a href="https://unsplash.com/@ncrediblet">Nick Wilkerson</a> / <a href="https://unsplash.com/?utm_source=ghost&amp;utm_medium=referral&amp;utm_campaign=api-credit">Unsplash</a></figcaption> */}
+                               
                             </figure>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

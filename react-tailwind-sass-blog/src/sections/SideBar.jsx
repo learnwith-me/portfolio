@@ -4,7 +4,7 @@ import FeaturedPost from '../components/FeaturePost'
 
 const SideBar = () => {
   return (
-    <div className=' dark:bg-darkModeBlack global-padding hidden md:block '>
+    <div className=' dark:bg-darkModeBlack global-padding hidden md:block !pl-0 '>
       <AboutMe />
       <FeaturedPost />
     </div>
