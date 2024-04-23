@@ -304,11 +304,11 @@ div.tags .tag-link-21:before,
 
 div.tags .primary-tag.tag-link-19,
 div.tags .tag-link-19:before,
-.overlay-effect .ctag-19.image-container:before,
-.epcl-carousel .item article.ctag-19,
+.overlay-effect .ctag-6.image-container:before,
+.epcl-carousel .item article.ctag-6,
 #single section.siblings article.primary-cat-19,
-.ctag.ctag-19 {
-    background: #3aa9fd
+.ctag.ctag-6 {
+    background: #cf649a
 }
 
 .tagcloud a.tag-link-19:before,
@@ -328,10 +328,10 @@ div.tags .tag-link-19:before,
 
 div.tags .primary-tag.tag-link-23,
 div.tags .tag-link-23:before,
-.overlay-effect .ctag-23.image-container:before,
-.epcl-carousel .item article.ctag-23,
+.overlay-effect .ctag-7.image-container:before,
+.epcl-carousel .item article.ctag-7,
 #single section.siblings article.primary-cat-23,
-.ctag.ctag-23 {
+.ctag.ctag-7 {
     background: #ffcb29
 }
 
@@ -429,7 +429,7 @@ div.tags .tag-link-20:before,
     top: -5px;
     z-index: 5;
     color: #fff;
-    background: var(--epcl-secondary-color);
+    background: #000;
     width: 23px;
     height: 23px;
     border-radius: 50%;

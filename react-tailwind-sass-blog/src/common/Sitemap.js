@@ -1,6 +1,9 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
-import { FetchPosts } from '../api/FetchData';
+import { FetchPosts } from '../api/FetchPosts';
+
+
+
 
 
 const Sitemap = ({ FetchPosts, PostReducer, loading, error }) => {

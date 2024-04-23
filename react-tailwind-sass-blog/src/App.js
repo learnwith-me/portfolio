@@ -1,15 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Routes, Route, useNavigate } from "react-router-dom";
-import CategoryContainer from "./containers/CategoryContainer";
-import Nav from "./sections/Nav";
 import TopSearchUi from "./components/search/TopSearchUi";
-import Footer from "./sections/Footer";
-import SinglePostContainer from "./containers/SinglePostContainer";
-import DocumentContainer from "./containers/DocumentContainer";
-import SearchContainer from "./containers/SearchContainer";
-import AboutUs from "./sections/AboutUs";
-import MyPassion from "./sections/MyPassion";
-import Home from "./sections/Home";
+import SingleTechPost from "./components/posts/SinglePost";
+import SingleCatgory from "./components/categories/SingleCatgory";
+import SearchContainer from "./components/search/SearchContainer";
+import Nav from "./components/layout/Nav";
+import Footer from './components/layout/Footer';
+import AboutUs from './components/pages/AboutUs';
+import MyPassion from './components/pages/MyPassion';
+import Home from './components/pages/Home';
 
 function App() {
 
@@ -27,6 +26,12 @@ function App() {
 		}
 	}
 
+	const focusField = useRef(null);
+
+	const handleFocusField = (e) => {
+		focusField.current.focus();
+	}
+
 	const [searchQuery, setSearchQuery] = useState('');
 	const [searchResults, setSearchResults] = useState([]);
 	const navigate = useNavigate(); // Initialize navigate
@@ -42,6 +47,7 @@ function App() {
 					.then((data) => {
 						setSearchResults(data);
 						openSearch(); // Call openSearch after setting the search results
+						setSearchQuery('');
 					})
 					.catch((error) => {
 						console.error('Error fetching data:', error);
@@ -50,7 +56,7 @@ function App() {
 							setTimeout(() => {
 								fetchData();
 								retries--;
-							}, 1000); // Adjust the delay as needed
+							}, 2000); // Adjust the delay as needed
 						} else {
 							// No more retries, handle the error or display a message to the user
 							console.error('Maximum retries reached. Unable to fetch data.');
@@ -58,6 +64,7 @@ function App() {
 					});
 				// Navigate to /search page when searchQuery is not empty
 				navigate('/search');
+
 			} else {
 				// Clear search results if the search query is empty
 				setSearchResults([]);
@@ -75,18 +82,17 @@ function App() {
 
 	return (
 		<>
-			<Nav openSearch={openSearch} />
+			<Nav openSearch={openSearch} handleFocusField={handleFocusField} />
 			<Routes>
 				<Route path="/" exact element={<Home />} />
 				<Route path="/about-me" exact element={<AboutUs />} />
 				<Route path="/my-passion" exact element={<MyPassion />} />
-				<Route path="/category/:slug" element={<CategoryContainer />} />
-				<Route path="/singlepost/:id/:slug" element={<SinglePostContainer />} />
-				<Route path="/doc" element={<DocumentContainer />} />
+				<Route path="/category/:slug" element={<SingleCatgory />} />
+				<Route path="/singlepost/:id/:slug" element={<SingleTechPost />} />
 				<Route path="/search" element={<SearchContainer searchResults={searchResults} />} />
 			</Routes>
 			<Footer />
-			<TopSearchUi isSearchVisible={isSearchVisible} openSearch={openSearch} searchQuery={searchQuery} handleSearchChange={handleSearchChange} />
+			<TopSearchUi isSearchVisible={isSearchVisible} openSearch={openSearch} searchQuery={searchQuery} handleSearchChange={handleSearchChange} focusField={focusField} />
 		</>
 	);
 }
