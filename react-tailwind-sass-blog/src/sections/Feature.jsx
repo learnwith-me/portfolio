@@ -65,13 +65,13 @@ const Feature = () => {
                         </div> */}
                     </div>
                     <div className="featured-wrap">
-                    <Flickity
-                        className={'carousel'} // default ''
-                        elementType={'div'} // default 'div'
-                        options={flickityOptions} // takes flickity options {}
-                        reloadOnUpdate // default false
-                        static // default false
-                        autoPlay={true}
+                        <Flickity
+                            className={'carousel'} // default ''
+                            elementType={'div'} // default 'div'
+                            options={flickityOptions} // takes flickity options {}
+                            reloadOnUpdate // default false
+                            static // default false
+                            autoPlay={true}
                         >
                             {
                                 catLabel.map((catItems, index) => {
@@ -81,11 +81,11 @@ const Feature = () => {
                                             <div
                                                 className="item-image global-image global-image-orientation global-radius is-square"
                                             >
-                                                
-                                                    <Link to={`/category/${catItems.slug}`}
+
+                                                <Link to={`/category/${catItems.slug}`}
                                                     className="global-link"
                                                     aria-label={catItems.name}>
-                                                    </Link>
+                                                </Link>
                                                 <img
                                                     sizes="(max-width:480px) 300px, (max-width:768px) 600px, 1200px"
                                                     src={catItems.acf.category_image.url}

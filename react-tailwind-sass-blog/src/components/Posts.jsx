@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export const Posts = ({ singleCatData, params, displayCount, setDisplayCount, handleLoadMore }) => {
 
-    
+
 
     return (
         <div className="loop-wrap !mb-0">
@@ -11,7 +11,7 @@ export const Posts = ({ singleCatData, params, displayCount, setDisplayCount, ha
             {
                 singleCatData.slice(0, displayCount).map((catItem, index) => {
                     return (
-                        
+
                         <article key={index} className="item is-loop is-image">
                             <div
                                 className="item-image global-image global-image-orientation global-radius is-landscape"
@@ -70,10 +70,10 @@ export const Posts = ({ singleCatData, params, displayCount, setDisplayCount, ha
                                 </p>
                             </div>
                         </article>
-                                
+
                     )
                 })}
-                
+
         </div>
     )
 }
@@ -90,7 +90,7 @@ export const SCategory = ({ singleCatData, params }) => {
                 singleCatData.map((catItem, index) => {
                     return (
                         catItem.categories.map((cats, index) => {
-                            if(params.slug == cats.slug) {
+                            if (params.slug == cats.slug) {
                                 // console.log(catItem)
                                 return (
                                     <article key={index} className="item is-loop is-image">

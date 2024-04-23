@@ -8,6 +8,9 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
+learn-angular
+react-projects
+projects
 dist
 dist-ssr
 *.local

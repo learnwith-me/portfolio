@@ -1,12 +1,11 @@
 import React, { useState } from 'react'
 import Hero from './Hero';
-import Feature from './Feature';
-import Authors from '../components/Authors';
 import Recommended from '../components/Recommended';
 import { useParams } from 'react-router-dom';
-import { Posts } from '../components/Posts';
+import TechPosts from '../components/posts/TechPosts';
+import TrendingTopics from '../common/TrendingTopics';
 
-const Home = ({catData}) => {
+const Home = ({ catData }) => {
 
     const [displayCount, setDisplayCount] = useState(6); // Initial number of items to display
 
@@ -18,25 +17,25 @@ const Home = ({catData}) => {
     const params = useParams();
 
     return (
-            <main className='global-main'>
-                <div className="hero-section dark:bg-darkModeBlack">
-                    <div className="hero-wrap">
-                        <Hero />
-                        <Feature />
-                    </div>
+        <main className='global-main'>
+            {/* <div className="hero-section dark:bg-darkModeBlack">
+                <div className="hero-wrap">
+                     <Hero /> 
+                     <Feature /> 
                 </div>
-                <div className="loop-section global-padding dark:bg-darkModeBlack !mb-0">
-                    <Authors />
-                    <Posts singleCatData={cateData} params={params} displayCount={displayCount} setDisplayCount={setDisplayCount} handleLoadMore={handleLoadMore} />
-                </div>
-                {displayCount < cateData.length && (
-                    <div className="pagination-section dark:bg-darkModeBlack">
-                        <a href="page/2.html" aria-label="Load more"></a>
-                        <button className="global-button dark:bg-ghost-accent-color" onClick={handleLoadMore}>Load more</button>
-                    </div>
-                )}
-                <Recommended />
-            </main>
+            </div> */}
+            <div className='global-padding dark:bg-darkModeBlack'>
+                <TrendingTopics></TrendingTopics>
+            </div>
+
+            <div className="loop-section global-padding dark:bg-darkModeBlack !mb-0">
+
+                <TechPosts displayCount={displayCount} handleLoadMore={handleLoadMore}></TechPosts>
+                {/* <Posts singleCatData={cateData} params={params} displayCount={displayCount} setDisplayCount={setDisplayCount} handleLoadMore={handleLoadMore} /> */}
+            </div>
+
+            {/* <Recommended /> */}
+        </main>
     )
 }
 
