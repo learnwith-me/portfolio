@@ -184,16 +184,16 @@ img {
     --epcl-large-border-radius: 100px
 }
 
-.image-container.ctag-22:before {
+.image-container.ctag-0:before {
     background: #ff8e51
 }
 
 div.tags .primary-tag.tag-link-22,
 div.tags .tag-link-22:before,
-.overlay-effect .ctag-22.image-container:before,
-.epcl-carousel .item article.ctag-22,
+.overlay-effect .ctag-0.image-container:before,
+.epcl-carousel .item article.ctag-0,
 #single section.siblings article.primary-cat-22,
-.ctag.ctag-22 {
+.ctag.ctag-0 {
     background: #ff8e51;
 }
 
@@ -234,10 +234,10 @@ div.tags .tag-link-22:before,
 
 div.tags .primary-tag.tag-link-18,
 div.tags .tag-link-18:before,
-.overlay-effect .ctag-18.image-container:before,
-.epcl-carousel .item article.ctag-18,
+.overlay-effect .ctag-1.image-container:before,
+.epcl-carousel .item article.ctag-1,
 #single section.siblings article.primary-cat-18,
-.ctag.ctag-18 {
+.ctag.ctag-1 {
     background: #ff2ed9
 }
 
@@ -248,10 +248,10 @@ div.tags .tag-link-18:before,
 
 div.tags .primary-tag.tag-link-17,
 div.tags .tag-link-17:before,
-.overlay-effect .ctag-17.image-container:before,
-.epcl-carousel .item article.ctag-17,
+.overlay-effect .ctag-2.image-container:before,
+.epcl-carousel .item article.ctag-2,
 #single section.siblings article.primary-cat-17,
-.ctag.ctag-17 {
+.ctag.ctag-2 {
     background: #227dff
 }
 
@@ -262,10 +262,10 @@ div.tags .tag-link-17:before,
 
 div.tags .primary-tag.tag-link-24,
 div.tags .tag-link-24:before,
-.overlay-effect .ctag-24.image-container:before,
-.epcl-carousel .item article.ctag-24,
+.overlay-effect .ctag-3.image-container:before,
+.epcl-carousel .item article.ctag-3,
 #single section.siblings article.primary-cat-24,
-.ctag.ctag-24 {
+.ctag.ctag-3 {
     background: #5751ff
 }
 
@@ -276,10 +276,10 @@ div.tags .tag-link-24:before,
 
 div.tags .primary-tag.tag-link-26,
 div.tags .tag-link-26:before,
-.overlay-effect .ctag-26.image-container:before,
-.epcl-carousel .item article.ctag-26,
+.overlay-effect .ctag-4.image-container:before,
+.epcl-carousel .item article.ctag-4,
 #single section.siblings article.primary-cat-26,
-.ctag.ctag-26 {
+.ctag.ctag-4 {
     background: #2a2728
 }
 
@@ -290,10 +290,10 @@ div.tags .tag-link-26:before,
 
 div.tags .primary-tag.tag-link-21,
 div.tags .tag-link-21:before,
-.overlay-effect .ctag-21.image-container:before,
-.epcl-carousel .item article.ctag-21,
+.overlay-effect .ctag-5.image-container:before,
+.epcl-carousel .item article.ctag-5,
 #single section.siblings article.primary-cat-21,
-.ctag.ctag-21 {
+.ctag.ctag-5 {
     background: #6a4ee9
 }
 
@@ -317,7 +317,7 @@ div.tags .tag-link-19:before,
 }
 
 
-.ctag.ctag-22 {
+.ctag.ctag-0 {
     background: #ff8e51
 }
 

@@ -1,11 +1,12 @@
 import React, { useEffect } from 'react';
-import { FetchPosts } from '../api/FetchPosts';
 import { connect } from 'react-redux';
+import { FetchPosts } from '../api/FetchData';
+
 
 const Sitemap = ({ FetchPosts, PostReducer, loading, error }) => {
 
     useEffect(() => {
-        FetchPosts();
+        FetchPosts('posts');
     }, []);
 
     const generateXml = (posts) => {

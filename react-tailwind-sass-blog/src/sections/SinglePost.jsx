@@ -5,10 +5,8 @@ import { Link } from 'react-router-dom';
 
 const SinglePost = ({ singlePostData, id, slug }) => {
 
-    console.log(singlePostData);
-
     const postArrayData = singlePostData[0];
-    console.log(postArrayData)
+
     return (
         <article className="post-section">
             <div className="post-header dark:bg-darkModeBlack">

@@ -42,15 +42,15 @@ const FooterWrap = () => {
                     <small className=' !-ml-[10px]'>〈Learn With Me /〉</small>
                     <ul>
                         <li>
-                            <a href="javascript:void(0)" className='dark:text-white relative'>
+                            <a className='dark:text-white relative'>
                                 High on Javascript
-                                {/* <span class="absolute -top-[12px] z-0 md:top-[-12px] block -left-[2px] md:-left-[34px] text-[8px] bg-[#f922a5] rounded-md py-0 px-[6px] text-white ">comming soon</span> */}
+                                {/* <span className="absolute -top-[12px] z-0 md:top-[-12px] block -left-[2px] md:-left-[34px] text-[8px] bg-[#f922a5] rounded-md py-0 px-[6px] text-white ">comming soon</span> */}
                             </a>
                         </li>
                         <li>
-                            <a href="javascript:void(0)" className='dark:text-white relative'>
+                            <a className='dark:text-white relative'>
                                 Learn React JS In 30 Days
-                                {/* <span class="absolute -top-[12px] z-0 md:top-[-12px] block -left-[2px] md:-left-[34px] text-[8px] bg-[#f922a5] rounded-md py-0 px-[6px] text-white ">comming soon</span> */}
+                                {/* <span className="absolute -top-[12px] z-0 md:top-[-12px] block -left-[2px] md:-left-[34px] text-[8px] bg-[#f922a5] rounded-md py-0 px-[6px] text-white ">comming soon</span> */}
                             </a>
                         </li>
                     </ul>
@@ -59,9 +59,9 @@ const FooterWrap = () => {
                     <small>Improve English</small>
                     <ul>
                         <li>
-                            <a href="javascript:void(0)" className='dark:text-white relative'>
+                            <a className='dark:text-white relative'>
                                 Learn comming soon words daily
-                                {/* <span class="absolute -top-[12px] z-0 md:top-[-12px] block -left-[2px] md:-left-[34px] text-[8px] bg-[#f922a5] rounded-md py-0 px-[6px] text-white ">comming soon</span> */}
+                                {/* <span className="absolute -top-[12px] z-0 md:top-[-12px] block -left-[2px] md:-left-[34px] text-[8px] bg-[#f922a5] rounded-md py-0 px-[6px] text-white ">comming soon</span> */}
                             </a>
                         </li>
                     </ul>
@@ -70,8 +70,8 @@ const FooterWrap = () => {
                     <small>Get in Touch     </small>
                     <ul>
                         <li>
-                            <a href="javascript:void(0)" className='dark:text-white relative' alt='Mumbai, India' title='Mumbai, India'>
-                                Mumbai, India |<span class="absolute text-xl top-[0px] left-[104px] md:left-[116px]">🇮🇳</span> <span class="text-teal-600 text-xs p-1"></span>
+                            <a className='dark:text-white relative' alt='Mumbai, India' title='Mumbai, India'>
+                                Mumbai, India |<span className="absolute text-xl top-[0px] left-[104px] md:left-[116px]">🇮🇳</span> <span className="text-teal-600 text-xs p-1"></span>
                             </a>
                         </li>
                     </ul>
