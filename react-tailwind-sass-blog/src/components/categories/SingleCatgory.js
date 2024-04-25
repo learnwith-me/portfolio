@@ -35,7 +35,7 @@ const SingleCategory = ({
                     <h1 className="archive-title global-title is-tag dark:text-white">{matchingCategory.name}
                         <span className=' dark:text-black'>{matchingCategories.length}</span>
                     </h1>
-                    <p className="archive-excerpt global-excerpt dark:text-white">
+                    <p className="archive-excerpt global-excerpt dark:text-white !text-[18px]">
                         {matchingCategory.description}
                     </p>
                 </div>

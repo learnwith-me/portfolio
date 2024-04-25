@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Categories from '../categories/Categories';
 import Posts from '../posts/Posts';
+import LoginModal from '../auth/login/LoginModal';
 
 
 

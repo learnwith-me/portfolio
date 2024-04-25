@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { FetchPosts } from '../../api/FetchPosts';
 import Heart from '../../icons/Heart';
 
-const Posts = ({ FetchPosts, PostReducer, loading, error, displayCount, handleLoadMore, selectedCategory }) => {
+const TechPosts = ({ FetchPosts, PostReducer, loading, error, displayCount, handleLoadMore, selectedCategory }) => {
     useEffect(() => {
         FetchPosts("posts");
     }, []);
@@ -19,7 +19,7 @@ const Posts = ({ FetchPosts, PostReducer, loading, error, displayCount, handleLo
                 <div className="loaders absolute top-0 left-0 right-0 bottom-0 w-full z-[5] overflow-hidden bg-black opacity-80 flex flex-col items-center justify-center">
                     <div className="loader ease-linear rounded-full border-4 border-t-4 border-gray-200 h-12 w-12 mb-4"></div>
                     <h2 className="text-center text-white text-xl font-semibold">Loading...</h2>
-                    <p className="w-1/3 text-center text-white hidden md:block ">This may take a few seconds, please don't close this page.</p>
+                    <p className="w-1/3 text-center text-white hidden md:block !text-[18px]">This may take a few seconds, please don't close this page.</p>
                 </div>
             ) : error ? (
                 <p>Error1</p>
@@ -72,4 +72,4 @@ const mapStateToProps = (state) => ({
     error: state.PostReducer.error,
 });
 
-export default connect(mapStateToProps, { FetchPosts })(Posts);
+export default connect(mapStateToProps, { FetchPosts })(TechPosts);

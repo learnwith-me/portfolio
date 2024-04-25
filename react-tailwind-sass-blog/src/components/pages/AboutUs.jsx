@@ -13,7 +13,7 @@ const AboutUs = () => {
                     I am Harshad Patil
                 </h1>
                 <h3 className="text-[50px] text-center font-bold xs:mt-0 dark:text-white">I am a   <span className="words-wrapper"><strong className="is-hidden font-semibold">Frontend Developer</strong></span></h3>
-                <p className=" mt-3 text-center font-light xs:font-light xs:text-xl dark:text-white md:mx-40">
+                <p className=" mt-3 text-center font-light xs:font-light text-[20px] dark:text-white md:mx-40">
                     from Mumbai, India . <strong className=" font-medium underline">Currently working at a Tickled Media Pvt. Ltd</strong>. In my spare time I enjoy taking care of the plants, gaming, Reading, Learning and building my own projects. My preferred tools are TailwindCss, React JS, Javascript, Jquery, HTML5, CSS3, SASS.
                 </p>
             </div>

@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 @font-face {
     font-family: 'SVN-Have Heart';
@@ -11,6 +12,8 @@
 }
 
 
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -19,6 +22,33 @@
     @apply text-sm rounded-lg bg-gray-900 text-white py-1 px-2 hover:bg-white hover:text-gray-900 border-x border border-gray-900 cursor-pointer;
 }
 
+.item:hover .item-content .item-title a {
+    text-decoration: underline;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+.post-tags a {
+    font-size: 14px !important;
+}
+
+.post-excerpt {
+    font-size: 20px;
+}
+
+.post-meta-content {
+    font-size: 13px;
+}
+
+.post-content {
+    font-size: 20px !important;
+}
+
+.footer-desciption {
+    font-size: 20px;
+}
 
 .flickity-prev-next-button.previous {
     top: -25px;
@@ -467,4 +497,25 @@ div.tags .tag-link-20:before,
     padding: 0 10px;
     -webkit-transition: all .3s ease;
     transition: all .3s ease
+}
+
+svg.icon.large {
+    width: 17px;
+    height: 17px;
+    /* margin-top: -2px */
+}
+
+svg.secondary-color {
+    fill: var(--epcl-secondary-color)
+}
+
+svg.icon {
+    fill: #fff;
+    width: 10px;
+    height: 10px;
+    vertical-align: middle
+}
+
+.secondary-color {
+    color: var(--epcl-secondary-color);
 }

@@ -32,7 +32,13 @@ const Categories = ({ FetchCategoriesData, CategoryReducer, onCategoryClick, loa
 
     return (
         <>
-            <h2 className=' text-center mb-12 dark:text-white'>Trending Topics</h2>
+            <h2 className=' text-center mb-12 dark:text-white flex justify-center items-center gap-2'>
+                <svg className='icon large secondary-color' xmlns="http://www.w3.org/2000/svg" id="trending-icon" viewBox="0 0 24 24">
+                    <path fill="#1F1B1B" d="m6.67 7.914 3.062-4.143C11.71 1.093 12.7-.246 13.624.037c.923.283.923 1.925.923 5.21v.31c0 1.185 0 1.777.379 2.148l.02.02c.387.363 1.003.363 2.236.363 2.22 0 3.329 0 3.704.673l.018.034c.354.683-.289 1.553-1.574 3.29l-3.062 4.144c-1.98 2.678-2.969 4.017-3.892 3.734-.923-.283-.923-1.925-.923-5.21v-.31c0-1.184 0-1.777-.379-2.148l-.02-.02c-.387-.363-1.003-.363-2.236-.363-2.22 0-3.329 0-3.704-.673a1.084 1.084 0 0 1-.018-.034c-.354-.683.289-1.552 1.574-3.29Z" />
+                    <path fill="currentColor" d="m5.67 7.914 3.062-4.143C10.71 1.093 11.7-.246 12.624.037c.923.283.923 1.925.923 5.21v.31c0 1.185 0 1.777.379 2.148l.02.02c.387.363 1.003.363 2.236.363 2.22 0 3.329 0 3.704.673l.018.034c.354.683-.289 1.553-1.574 3.29l-3.062 4.144c-1.98 2.678-2.969 4.017-3.892 3.734-.923-.283-.923-1.925-.923-5.21v-.31c0-1.184 0-1.777-.379-2.148l-.02-.02c-.387-.363-1.003-.363-2.236-.363-2.22 0-3.329 0-3.704-.673a1.084 1.084 0 0 1-.018-.034c-.354-.683.289-1.552 1.574-3.29Z" />
+                </svg>
+                Trending Topics
+            </h2>
             <div className='md:rounded-[150px] border-b-[1px] md:border-[1px] border-[#E9E8FF] dark:border-[#373737] max-w-[960px] mx-auto epcl-popular-categories'>
                 <div className=' p-[20px]'>
                     <Slider {...settings}>

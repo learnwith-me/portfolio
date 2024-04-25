@@ -96,7 +96,7 @@ const FooterWrap = () => {
                         <WhatsApp />
                     </a>
                 </div>
-                <div className="flex items-center justify-center flex-1 text-2xl gap-1 text-gray-700 tracking-wider py-3 dark:text-white">
+                <div className="flex items-center justify-center flex-1 text-[16px] gap-1 text-gray-700 py-3 dark:text-white">
                     <span>crafted with</span>
                     <Heart />
                     <em>by</em>
