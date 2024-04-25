@@ -75,7 +75,7 @@ const Nav = ({ openSearch, handleFocusField }) => {
                             <li>
                                 <Link className=' dark:text-black md:dark:text-white' to="/">Home</Link>
                             </li>
-                            <CourseTitle toggleDropdown={toggleDropdown} />
+                            {/* <CourseTitle toggleDropdown={toggleDropdown} /> */}
                             <li>
                                 <Link className=' dark:text-black md:dark:text-white' to="/about-me">About Me</Link>
                             </li>

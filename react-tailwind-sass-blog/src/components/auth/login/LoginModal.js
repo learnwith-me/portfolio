@@ -5,6 +5,7 @@ import LoginForm from './LoginForm';
 export default function LoginModal({ openModal, loginBtnText }) {
     let [isLoginOpen, setIsLoginOpen] = useState(false)
 
+
     function closeLoginModal() {
         setIsLoginOpen(false)
     }

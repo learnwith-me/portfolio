@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Categories from '../categories/Categories';
 import Posts from '../posts/Posts';
 import LoginModal from '../auth/login/LoginModal';
+import CoursesCarousel from '../courses/CoursesCarousel';
 
 
 
@@ -17,10 +18,11 @@ const Home = ({ catData }) => {
         setSelectedCategory(categorySlug);
     };
 
+
     return (
         <main className='global-main'>
             <div className='global-padding dark:bg-darkModeBlack pb-[50px]'>
-
+                <CoursesCarousel />
             </div>
             <div className='global-padding dark:bg-darkModeBlack pb-[50px]'>
                 <Categories onCategoryClick={handleCategoryClick} />

@@ -15,7 +15,7 @@ const Categories = ({ FetchCategoriesData, CategoryReducer, onCategoryClick, loa
     const settings = {
         dots: false,
         infinite: true,
-        speed: 500,
+        speed: 4000,
         slidesToShow: 6, // Desktop
         slidesToScroll: 1,
         autoplay: true,

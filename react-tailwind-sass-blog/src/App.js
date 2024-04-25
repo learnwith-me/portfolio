@@ -9,6 +9,7 @@ import Footer from './components/layout/Footer';
 import AboutUs from './components/pages/AboutUs';
 import MyPassion from './components/pages/MyPassion';
 import Home from './components/pages/Home';
+import SingleCourse from "./components/courses/SingleCourse";
 
 function App() {
 
@@ -89,6 +90,7 @@ function App() {
 				<Route path="/my-passion" exact element={<MyPassion />} />
 				<Route path="/category/:slug" element={<SingleCatgory />} />
 				<Route path="/singlepost/:id/:slug" element={<SingleTechPost />} />
+				<Route path="/course/:slug" element={<SingleCourse />} />
 				<Route path="/search" element={<SearchContainer searchResults={searchResults} />} />
 			</Routes>
 			<Footer />
